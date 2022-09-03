@@ -1,0 +1,20 @@
+<h1>{{heroe.nombre | uppercase}}<br><small>{{heroe.aparicion | date:'y'}}</small></h1>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <img [src]="heroe.img" class="img-fluid">
+        <br>
+    </div>
+    <div class="col-md-8">
+        <h3>{{heroe.nombre}}</h3>
+        <hr>
+        <p>{{heroe.bio}}</p>
+        <div>
+            <img  *ngIf= "heroe.casa=='Marvel'" width="35px" heigth="15px" src="../../../assets/img/marvel.png" >
+            <img  *ngIf= "heroe.casa=='DC'" width="35px" heigth="15px" src="../../../assets/img/dc.png" >
+            
+        </div>
+
+    </div>
+
+</div>
